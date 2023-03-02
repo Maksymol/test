@@ -1,0 +1,38 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.glitch {
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  position: relative;
+  color: #421ad4;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  animation: glitch 1s linear infinite;
+}
+
+.description {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #b32b2b;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
